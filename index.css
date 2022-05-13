@@ -13,40 +13,40 @@
 }
 #nav{
     width: 100%;
-    height: 50px;
+    height: 100px;
     display: flex;
+    padding: 1rem 0;
     justify-content: space-between;
-    margin-top: 3rem;
-    /* float: right; */
+    align-items: center;
 }
 #nav-left{
     margin-left: 5rem;
 }
 #nav-right{
     margin-right: 2rem;
+    display: flex;
+    align-items: center;
 }
 #nav-right ul{
-    margin-top: 1rem;
+    display: flex;
+    align-items: center;
 }
 #nav-right ul li{
     list-style-type: none;
-    display: inline-block;
 }
 #nav-right ul li a{
     text-decoration: none;
     margin: 0 2rem;
     color: #6c6a82;
 }
-#nav-right ul li a:hover{
 
-}
 #article-1{
     display: flex;
     flex-direction: row;
-    margin: 4rem;
+    padding: 4rem;
 }
 #article-left{
-    margin: 5rem 0;
+    padding: 2rem 0;
 }
 #article-left p{
     margin: 1rem 0;
@@ -74,12 +74,11 @@
 #article-left button:hover{
     background-color: #6b9bff;
 }
-#article-right{
 
-}
 #article-right img{
     width: 650px;
     height: 460px;
+    padding: 1rem;
 }
 #article-2{
     display: flex;
@@ -99,22 +98,24 @@
     margin:1rem 0;
 }
 #article-2-left #link{
+    display: flex;
+    align-items: center;
     margin-bottom: 1rem;
 }
 #article-2-left #link a{
     color: #89bcb5;
-    margin-right: 5px;
+    display: flex;
 }
 #article-2-left #link a:hover{
     color: #8feed8;
 }
 #article-2-left #link img {
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
+    margin-left: 5px;
 }
 #article-2-left #card{
     width: 420px;
-    /* height: 215px; */
     border-radius: 10px;
     padding: 2rem;
     margin-top: 3rem ;
@@ -183,18 +184,20 @@
 #footer{
     display: block;
     background-color: #07043b;
-    padding:3rem 20rem 3rem 5rem;
+    padding: 3rem;
 }
 #logo-div{
     padding-top: 3rem;
+    margin-left: 4rem;
 }
 #logo-div img{
+    padding-left: 5rem;
     filter: brightness(0) invert(1);
 }
 #footer-div{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-top: 1rem;
 }
 #footer-div #mail-div li{
@@ -239,6 +242,12 @@
     color: #707bbd;
 }
 @media screen and (max-width:570px) {
+    h1{
+        font-size: 25px;
+    }
+    p{
+        font-size: 15px;
+    }
     .wrapper{
         display:flex;
         flex-direction: column;
@@ -278,22 +287,23 @@
     #article-1 #article-left{
         text-align: center;
     }
+    #article-1 #article-left h1{
+        padding: 0 1rem;
+    }
     #article-1 #article-left p{
-        padding: 0 .86rem;
-        word-break: keep-all;
+        padding: 0 .7rem;
     }
     #article-1 #article-left input{
         width: 350px;
-        margin: 0 0 1rem 1rem;
+        margin: 1rem 0;
     }
     #article-1 #article-left button{
         width: 350px;    
-        margin: 0 0 1rem 1rem;
     }
     #article-2{
         flex-direction: column-reverse;
         background-image: url(/Images/bg-curve-mobile.svg);
-        background-position: center;
+        background-position:center;
         background-repeat: no-repeat;
         background-size: cover;
         padding: 4rem 2rem;
@@ -312,7 +322,9 @@
     #article-2 #article-2-left p{
         padding-right: 1rem;
     }
-    #article-2 #article-2-left #link{
+    #article-2 #article-2-left #link {
+        display: flex;
+        justify-content: center;
         text-align: center;
     }
     #access-div{
@@ -350,6 +362,12 @@
     #footer #footer-div{
         flex-direction: column;
         
+    }
+    #footer #logo-div{
+        margin: 0;
+    }
+    #footer #logo-div img{
+        padding: 0;
     }
     #footer-div #mail-div,#footer-div #contact-div,#footer-div #about-div,#footer-div #social-div{
         margin: 1rem 0;
